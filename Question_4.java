@@ -94,8 +94,8 @@ public class Question_4 extends Application {
                 System.out.println("ERROR - Directory or file not found.");
                 return;
             }
-            while (scan.hasNext()) {
-                String s = scan.next();
+            while (scan.hasNext()) { // Go through the text files contents
+                String s = scan.next(); // Set String to the next String in the file
                 for (int j = 0; j < s.length(); j++) { // Loop through current String
                     if((s.charAt(j)==(char)(65+i))||(s.charAt(j)==(char)(65+i+32))) { // If the letter is found
                         alphaCount++; // Increase the occurence of the letter
