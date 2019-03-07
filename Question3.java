@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 public class Question3 extends Application {  
   private int height = 400;
   private int width = 400;
-  private int radius = 10;
+  private int radius = 5;
   //Define circle points with radius
   private Circle[] circle = {new Circle(40, 40, 5),
     new Circle(140, 40, 5), new Circle(60, 140, 5)};
