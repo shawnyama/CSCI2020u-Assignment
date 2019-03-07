@@ -38,6 +38,7 @@ public class Question2 extends Application {
     FutVal.setDisable(true);
     FutVal.setStyle("-fx-text-fill: black ");
 
+    //make textfields longer  
     InvAmount.setPrefColumnCount(14);
     Years.setPrefColumnCount(14);
     AnnIntRate.setPrefColumnCount(14);
@@ -48,6 +49,7 @@ public class Question2 extends Application {
     Label AnnInt = new Label("Annual Interest Rate: ");
     Label Fut = new Label("Future Value");
 
+    //Add labels and Textfields in appropriate grid coordinates
     pane.add(Inv,0,1);
     pane.add(InvAmount, 1,1);
     pane.add(Year,0,2);
@@ -57,13 +59,13 @@ public class Question2 extends Application {
     pane.add(Fut,0,4);
     pane.add(FutVal,1,4);
 
-    // Create four buttons
     HBox hBox = new HBox(5);
     hBox.setPadding(new Insets(10, 10, 10, 10));
     Button btCalculate = new Button("Calculate");
     hBox.setAlignment(Pos.CENTER_RIGHT);
     hBox.getChildren().addAll(btCalculate);
     
+    //place gridpane with textfields and labels and hbox with calculate button in one pane
     BorderPane borderPane = new BorderPane();
     borderPane.setCenter(pane);
     borderPane.setBottom(hBox);
@@ -76,7 +78,9 @@ public class Question2 extends Application {
     primaryStage.show(); // Display the stage
 
     btCalculate.setOnAction(e -> {
+      //format for 2 decimal places 
       DecimalFormat df = new DecimalFormat("#.00");
+      //calculate result from given formula with modification for annual interest vs monthly interest 
       double result = Double.parseDouble(InvAmount.getText()) * (Math.pow(1 + (Double.parseDouble(AnnIntRate.getText())/12)/100,Double.parseDouble(Years.getText())*12));
       FutVal.setText(df.format(result)+ "");
     });
