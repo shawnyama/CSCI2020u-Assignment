@@ -14,10 +14,11 @@ import javafx.stage.Stage;
 public class Question3 extends Application {  
   private int height = 400;
   private int width = 400;
+  private int radius = 10;
   //Define circle points with radius
   private Circle[] circle = {new Circle(40, 40, 5),
     new Circle(140, 40, 5), new Circle(60, 140, 5)};
-  //Define center circle that is large and circle points will be bound to
+  //Define center circle that is large and circle points will be bound to large circle
   private Circle CircCenter = new Circle(height/2,width/2,80);
   private Line line1 = new Line();
   private Line line2 = new Line();
@@ -38,7 +39,7 @@ public class Question3 extends Application {
 
     //Connect points by setting the start and end locations of the lines to the circle coordinates
     drawLines();
-    
+
     pane.getChildren().addAll(CircCenter, circle[0], circle[1], circle[2],
       line1, line2, line3, text[0], text[1], text[2]);
     // Create a scene and place it in the stage
