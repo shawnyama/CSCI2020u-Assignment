@@ -1,5 +1,4 @@
 ## CSCI2020u-Assignment 
-### By: Shawn Yama & Harrish Thasarathan
 
 #### Question 1 - Displaying Three Cards
 
@@ -8,3 +7,6 @@
 #### Question 3 - Dragging Points on a Circle
 
 #### Question 4 - Histogram
+
+
+By: Shawn Yama & Harrish Thasarathan
