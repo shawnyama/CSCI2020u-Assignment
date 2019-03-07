@@ -9,10 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import java.text.DecimalFormat;
 
@@ -39,10 +37,10 @@ public class Question2 extends Application {
     FutVal.setStyle("-fx-text-fill: black ");
 
     //make textfields longer  
-    InvAmount.setPrefColumnCount(14);
-    Years.setPrefColumnCount(14);
-    AnnIntRate.setPrefColumnCount(14);
-    FutVal.setPrefColumnCount(14);
+    InvAmount.setPrefColumnCount(12);
+    Years.setPrefColumnCount(12);
+    AnnIntRate.setPrefColumnCount(12);
+    FutVal.setPrefColumnCount(12);
 
     Label Inv = new Label("Investment Amount: ");
     Label Year = new Label("Years: "); 
@@ -72,7 +70,7 @@ public class Question2 extends Application {
     BorderPane.setAlignment(hBox, Pos.BOTTOM_CENTER);
 
     // Create a scene and place it in the stage
-    Scene scene = new Scene(borderPane, 400, 200);
+    Scene scene = new Scene(borderPane, 310, 200);
     primaryStage.setTitle("Question2"); // Set the stage title
     primaryStage.setScene(scene); // Place the scene in the stage
     primaryStage.show(); // Display the stage
