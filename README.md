@@ -29,7 +29,7 @@ To test out the circle drag program run the following commands in succession
 javac Question3.java
 java Question3
 ```
-To see how the points are initialized to random locations on the circle run the last command a few times and observe the different placements
+To see how the points are initialized to random locations on the circle run the last command a few times and observe the different placements. Dragging the points around with your mouse will allow you to visualize the changing angles between lines that connect the three points. 
 
 #### Question 4 - Histogram
 
