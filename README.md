@@ -14,7 +14,7 @@ cd CSCI2020u-Assignment
 
 ### Codes
 #### Question 1 - Displaying Three Cards
-This program displays three random cards. Before you run the program make sure that the Cards folder is being read in the directory that you have saved it in. The directory can be altered at line 29. Next compile and run the code using these commands in terminal:
+This program displays three random images of cards from the provided Cards folder. Before you run the program make sure that the Cards folder is being read in the directory that you have saved it in. The directory can be altered at line 29. Next compile and run the code using these commands in terminal:
 ```bash
 javac Question_1.java
 java Question_1
